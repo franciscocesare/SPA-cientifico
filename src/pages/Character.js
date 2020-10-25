@@ -1,13 +1,13 @@
 //aca construimos la view con la descripcion de cada uno
 
-const character = () => {
+const Character = () => {
   const view = `
-<div class="characters-inner">
-<article class="characters-card">
+<div class="Characters-inner">
+<article class="Characters-card">
 <img src="image" alt="name">
 <h2>Name</h2>
 </article>
-<article class="characters-card">
+<article class="Characters-card">
     <h3>Episodes: </h3>
     <h3>Status: </h3>
     <h3>Species: </h3>
@@ -22,4 +22,4 @@ const character = () => {
   return view;
 };
 
-export default character;
+export default Character;

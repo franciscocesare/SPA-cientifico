@@ -1,18 +1,19 @@
 
 
 
-const header = () => {
+const Header = () => {
 const view = `
 <div class="Header-main">
     <div class="Header-logo">
         <h1>
-            <a href="/">100tifi.co </a>
+            <a href="/">
+            100tifiii.co 
+            </a>
         </h1>
     </div>
-
     <div class="Header-nav">
         <a href="#/about/">
-            About
+            Abouttt
         </a>
     </div>
 </div>
@@ -20,4 +21,4 @@ const view = `
 return view;
 };
 
-export default header;
+export default Header;

@@ -1,5 +1,5 @@
 //necesitamos una funcion que nos va a retornar la vista que necesitamos
-const home = () => {//las comillas inv permiten trabajar multilinea
+const Home = () => {//las comillas inv permiten trabajar multilinea
 //hacemos el ordenamiento para ver donde vamos a ubicar a cada uno de los personajes
     const view = `     
         <div class= "Characters> 
@@ -15,4 +15,4 @@ const home = () => {//las comillas inv permiten trabajar multilinea
     return view;
 };
 
-export default home;   //nos va a permitir identificar si este archivo puede ser utilizado en otros archivos JS
+export default Home;   //nos va a permitir identificar si este archivo puede ser utilizado en otros archivos JS

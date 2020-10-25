@@ -1,6 +1,6 @@
 const path = require('path'); // vamos a requerir traer path, llave node y saber donde nos estamos moviendo
 //archivo para trabajar con html
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 //vamos a creare un modulo que vamos a exportar
 
@@ -10,8 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),   //path que importe, utilice resolver para saber donde se encuentra
         filename: 'main.js'  //el compilado que genero de esto cuando este listo pára produccion. dentro de DIST
     },
-
-    //para definir las extensiones con las que va a trabajar nuestro proyecto
+//para definir las extensiones con las que va a trabajar nuestro proyecto
     resolve: {
         extensions: ['.js'],  //aca las extensiones con las que vas a trabajar
 
@@ -29,7 +28,7 @@ module.exports = {
 
     },
     plugins: [
-        new htmlWebpackPlugin(
+        new HtmlWebpackPlugin(
             {
                 inject: true,    //como voy a un archivo html a injectar un valor
                 template: './public/index.html',    //donde se encuentra el template inical
